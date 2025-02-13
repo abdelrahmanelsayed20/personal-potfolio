@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">
-        <p class="selling-point">“Big problems, smart solutions—scaling ideas beyond limits“</p>
-
-      </div>
+      <div class="logo">Abdelrahman Elsayed</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -23,7 +20,6 @@
         </ul>
       </div>
     </nav>
-
     <nav id="hamburger-nav">
       <div class="logo">Abdelrahman Elsayed</div>
       <div class="hamburger-menu">
@@ -40,18 +36,19 @@
         </div>
       </div>
     </nav>
-
     <section id="profile">
       <div class="section__pic-container">
-        <img src="assets/profile.png" alt="Abdelrahman Elsayed profile picture" />
+        <img src="./assets/profile-pic.png" alt="Abdelrahman Elsayed profile picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Welcome, I'm</p>
+        <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Abdelrahman Elsayed</h1>
-        <p class="section__text__p2">Data Science and AI Student</p>
-        <p class="selling-point">“Big problems, smart solutions—scaling ideas beyond limits“</p>
+        <p class="section__text__p2">Data Scientist</p>
         <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('assets/Abdulrahman Elsayed Resume (2).pdf')">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
             Download CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -59,80 +56,94 @@
           </button>
         </div>
         <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon"
-            onclick="location.href='https://www.linkedin.com/in/abdelrahman-elsayed-887232262/'" />
-          <img src="./assets/github.png" alt="Github profile" class="icon"
-            onclick="location.href='https://github.com/abdelrahmanelsayed20'" />
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/YOUR-LINKEDIN'" 
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/YOUR-GITHUB'" 
+          />
         </div>
       </div>
     </section>
-
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p>Junior student at CSAI School at Zewail City <br />Data Science and AI</p>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend & Backend Development</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>B.Sc. Computer Science (2026)<br />Zewail City University</p>
+            </div>
           </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-            <p>Bachelor's Degree student, currently in my third and junior year</p>
+          <div class="text-container">
+            <p>
+              Passionate about AI, Data Science, and Web Development. I enjoy solving real-world problems with technology and continuously expanding my knowledge in the field of Machine Learning and Software Engineering.
+            </p>
           </div>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
     </section>
-
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Data Science</h2>
+            <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
-              <article><img src="./assets/checkmark.png" class="icon" /><h3>Python</h3><p>Experienced</p></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><h3>CSS</h3><p>Intermediate</p></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><h3>Data Retrieval</h3><p>Intermediate</p></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><h3>JavaScript</h3><p>Basic</p></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><h3>C++</h3><p>Intermediate</p></article>
+              <article><h3>HTML</h3><p>Experienced</p></article>
+              <article><h3>CSS</h3><p>Experienced</p></article>
+              <article><h3>JavaScript</h3><p>Intermediate</p></article>
+              <article><h3>React</h3><p>Intermediate</p></article>
+              <article><h3>Material UI</h3><p>Intermediate</p></article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Software Development</h2>
+            <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
-              <article><img src="./assets/checkmark.png" class="icon" /><h3>SQL</h3><p>Intermediate</p></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><h3>Flutter</h3><p>Intermediate</p></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><h3>HTML</h3><p>Intermediate</p></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><h3>Git</h3><p>Intermediate</p></article>
+              <article><h3>PostgreSQL</h3><p>Intermediate</p></article>
+              <article><h3>Node.js</h3><p>Intermediate</p></article>
+              <article><h3>Flask</h3><p>Intermediate</p></article>
+              <article><h3>Git</h3><p>Intermediate</p></article>
             </div>
           </div>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
-
-    
-   
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img src="./assets/email.png" class="icon contact-icon" />
-          <p><a href="mailto:abdelrahmanelsayed.ca@gmail.com">abdelrahmanelsayed.ca@gmail.com</a></p>
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:YOUR-EMAIL@gmail.com">YOUR-EMAIL@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
-          <img src="./assets/linkedin.png" class="icon contact-icon" />
-          <p><a href="https://www.linkedin.com/in/abdelrahman-elsayed-887232262/">LinkedIn</a></p>
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a></p>
         </div>
       </div>
     </section>
-
     <footer>
       <nav>
         <ul class="nav-links">
@@ -142,90 +153,8 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <p>Copyright &#169; 2024 Abdelrahman Elsayed. All Rights Reserved.</p>
     </footer>
-
     <script src="script.js"></script>
   </body>
-  </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-     
-
 </html>
